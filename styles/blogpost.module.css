@@ -1,0 +1,19 @@
+.main{
+    display: grid;
+    justify-content: center;
+    padding: auto 140px;
+}
+.heading{
+text-align: center;
+font-weight: bold;
+font-size: 4rem;
+
+}
+.title{
+    text-align: center;
+}
+.text{
+    text-align: left;
+    display: block;
+    margin: 0 150px;
+}
