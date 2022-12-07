@@ -14,7 +14,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Hunting coder
         </h1>
-        <img src='/images/coder.webp' className={styles.image} alt='coder image' />
+        {/* <img src='/images/coder.webp' className={styles.image} alt='coder image' /> */}
         <p className={styles.description}>
           A blog for hunting coders by hunting coder
         </p>

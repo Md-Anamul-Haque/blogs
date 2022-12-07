@@ -63,6 +63,5 @@ a {
   }
 }
 .active{
-  background-color: red;
-  border: 1px solid white;
+  background-color: rgba(91, 225, 29, 0.815);
 }

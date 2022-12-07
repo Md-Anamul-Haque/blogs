@@ -9,10 +9,10 @@ function MyApp({ Component, pageProps }) {
     <header>
       <nav className='mainnav'>
         <ul>
-          <li><Link className={router.pathname == "/" ? "active" : ""} href='/'>Home</Link></li>
-          <li><Link className={router.pathname == "/about" ? "active" : ""} href='/about'>About</Link></li>
-          <li><Link className={router.pathname == "/blogs" ? "active" : ""} href='/blogs'>Blogs</Link></li>
-          <li><Link className={router.pathname == "/contact" ? "active" : ""} href='/contact'>Contact</Link></li>
+          <li className={router.pathname == "/" ? "active" : ""}><Link href='/'>Home</Link></li>
+          <li className={router.pathname == "/about" ? "active" : ""}><Link href='/about'>About</Link></li>
+          <li className={router.pathname == "/blogs" ? "active" : ""}><Link href='/blogs'>Blogs</Link></li>
+          <li className={router.pathname == "/contact" ? "active" : ""}><Link href='/contact'>Contact</Link></li>
         </ul>
       </nav>
     </header>
