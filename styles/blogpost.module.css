@@ -3,6 +3,11 @@
     justify-content: center;
     padding: auto 140px;
 }
+@media only screen and (min-width: 900px) {
+    .main {
+      padding: 0 1.2rem;
+    }
+}  
 .heading{
 text-align: center;
 font-weight: bold;

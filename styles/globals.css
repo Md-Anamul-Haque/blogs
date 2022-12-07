@@ -31,7 +31,7 @@ a {
   display:flex;
   justify-content: center;
   margin-top: 50px;
-  width: 100vw;
+  width: 100%;
 }
 
 .mainnav ul{
@@ -44,17 +44,25 @@ a {
   margin: auto;
 }
 .mainnav ul li{
-  padding: 0 32px;
+  padding: 0 5px;
   font-weight: bold;
   list-style: none;
   color: white;
   text-shadow: 1px 2px 1px blueviolet;
   font-size: 1.1rem;
-  padding-bottom: 3px;
   border-radius: 5px;
 }
 .mainnav ul li:hover{
   box-shadow: 2px 2px 3px 3px #9994;
   background-color: darkslategray;
   width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .mainnav ul li{
+    padding: 0 32px;
+  }
+}
+.active{
+  background-color: red;
+  border: 1px solid white;
 }

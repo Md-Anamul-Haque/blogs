@@ -44,11 +44,12 @@ const Slug = (props) => {
 
 
 export async function getStaticPaths() {
+  let allb = await fs.promises.readdir(`blogdata`);
+  allb = allb.map((b) => {
+    return ({ params: { slug: b.split('.')[0] } })
+  })
   return {
-    paths: [{ params: { slug: 'how-to-learn-javascript' } },
-    { params: { slug: 'how-to-learn-reactjs' } },
-    { params: { slug: 'how-to-learn-nextjs' } },
-    ],
+    paths: allb,
     fallback: false, // can also be true or 'blocking'
   }
 }
@@ -59,7 +60,6 @@ export async function getStaticProps(context) {
   const blog = await fs.promises.readFile(`blogdata/${slug}.json`, 'utf-8')
   // const res = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`);
   // const blog = await res.json();
-  console.log(blog)
   return {
     props: { blog: JSON.parse(blog) }, // will be passed to the page component as props
   }

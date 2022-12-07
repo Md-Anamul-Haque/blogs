@@ -128,7 +128,7 @@
   }
 }
 
-
+/* 
 .mainnav ul{
   display:flex;
   justify-content: center;
@@ -136,11 +136,20 @@
 }
 
 .mainnav ul li{
-  margin: 0 32px;
+  margin: 0 5px;
   font-weight: bold;
   list-style: none;
-}
+} */
+
+/* } */
 .latest_blogs{
   width: 350px;
   font-size: 46px;
+}
+
+.image{
+  width: 200px;
+  border-radius: 67px;
+  height: 210px;
+  margin-top: 50px;
 }
